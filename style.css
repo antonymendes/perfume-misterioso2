@@ -1,0 +1,85 @@
+/* style.css - Estilo principal */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe6ec);
+  color: #333;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #aa336a;
+  text-align: center;
+}
+
+.pergunta {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #aa336a;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8a2e59;
+}
+
+.loading, .resultado, .encontro, .final {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #aa336a;
+  font-size: 18px;
+}
+
+.loading span {
+  display: none;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .resultado, .loading, .encontro, .final {
+    font-size: 16px;
+  }
+}

@@ -59,6 +59,7 @@ document.getElementById("encontro").addEventListener("submit", function (e) {
   db.ref("respostas").push(respostas)
     .then(() => {
       document.getElementById("encontro").style.display = "none";
+      resultado.style.display = "none";
       final.style.display = "block";
     })
     .catch(err => {

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descubra Seu Perfume Misterioso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Descubra o Perfume Misterioso</h1>
+    <form id="quiz">
+      <div class="pergunta">
+        <label>1. Qual a nota do perfume misterioso?</label>
+        <select name="nota">
+          <option value="amadeirada">Amadeirada</option>
+          <option value="cítrica">Cítrica</option>
+          <option value="oriental">Oriental</option>
+          <option value="fresca">Fresca</option>
+        </select>
+      </div>
+      <div class="pergunta">
+        <label>2. Qual a intensidade dele?</label>
+        <select name="intensidade">
+          <option value="forte">Marcante e intensa</option>
+          <option value="moderada">Equilibrada</option>
+          <option value="leve">Suave e discreta</option>
+        </select>
+      </div>
+      <div class="pergunta">
+        <label>3. Onde você usaria esse perfume?</label>
+        <select name="ocasião">
+          <option value="balada">Balada / eventos noturnos</option>
+          <option value="trabalho">Trabalho / dia a dia</option>
+          <option value="encontro">Encontros românticos</option>
+          <option value="viagem">Viagens / momentos especiais</option>
+        </select>
+      </div>
+      <div class="pergunta">
+        <label>4. Se você fosse um lugar, qual seria?</label>
+        <select name="lugar">
+          <option value="floresta">Floresta</option>
+          <option value="praia">Praia</option>
+          <option value="cidade">Cidade grande</option>
+          <option value="deserto">Deserto</option>
+        </select>
+      </div>
+      <button type="submit">Descobrir palpite</button>
+    </form>
+
+    <div class="loading" id="loading">
+      <span id="frase1">Analisando sua essência...</span>
+      <span id="frase2">Conectando notas e lembranças...</span>
+      <span id="frase3">Decifrando mistérios perfumados...</span>
+    </div>
+
+    <div class="resultado" id="resultado">
+      Analisando tudo, meu palpite tá cada vez mais afiado. Mas pra fechar esse dossiê com precisão... talvez eu precise de uma entrevista presencial com a dona do segredo.
+    </div>
+
+    <form id="encontro" class="encontro">
+      <h2>Quiz Bônus: Rota para o Encontro Ideal</h2>
+      <label>Qual dia combina mais com você?</label>
+      <select name="dia">
+        <option value="sabado">Sábado</option>
+        <option value="domingo">Domingo</option>
+      </select>
+      <label>Qual horário você prefere?</label>
+      <select name="horario">
+        <option value="16-17">16h às 17h</option>
+        <option value="18-20">18h às 20h</option>
+        <option value="21-23">21h às 23h</option>
+      </select>
+      <label>Restaurante dos sonhos?</label>
+      <select name="restaurante">
+        <option value="japa">Japonês</option>
+        <option value="churrasco">Churrascaria</option>
+        <option value="italiano">Italiano</option>
+        <option value="pastel">Pastel de feira</option>
+        <option value="podrao">Podrão raiz</option>
+      </select>
+      <button type="submit">Enviar rota secreta</button>
+    </form>
+
+    <div class="final" id="final">
+      <p>“Cada escolha sua me aproximou mais do segredo. Mas a confirmação final? Só pode acontecer com um sorriso seu, ao vivo.”</p>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

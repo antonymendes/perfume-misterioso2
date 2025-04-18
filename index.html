@@ -47,28 +47,32 @@
       </div>
       <button type="submit">Descobrir palpite</button>
     </form>
+
     <div class="loading" id="loading">
       <span id="frase1">Analisando sua essência...</span>
       <span id="frase2">Conectando notas e lembranças...</span>
       <span id="frase3">Decifrando mistérios perfumados...</span>
     </div>
+
     <div class="resultado" id="resultado">
       Analisando tudo, meu palpite tá cada vez mais afiado. Mas pra fechar esse dossiê com precisão... talvez eu precise de uma entrevista presencial com a dona do segredo.
     </div>
+
     <form id="encontro" class="encontro">
       <h2>Quiz Bônus: Rota para o Encontro Ideal</h2>
       <label>Qual dia combina mais com você?</label>
       <select name="dia">
-        <option value="sexta">Sexta-feira</option>
         <option value="sabado">Sábado</option>
         <option value="domingo">Domingo</option>
       </select>
+
       <label>Qual horário você prefere?</label>
       <select name="horario">
         <option value="16-17">16h às 17h</option>
         <option value="18-20">18h às 20h</option>
         <option value="21-23">21h às 23h</option>
       </select>
+
       <label>Restaurante dos sonhos?</label>
       <select name="restaurante">
         <option value="japa">Japonês</option>
@@ -77,14 +81,18 @@
         <option value="pastel">Pastel de feira</option>
         <option value="podrao">Podrão raiz</option>
       </select>
+
       <button type="submit">Enviar rota secreta</button>
     </form>
+
     <div class="final" id="final">
-      Pronto. A rota tá traçada. Agora é só você dizer "sim" no momento certo.
+      <h2>Descubra o Perfume Misterioso</h2>
+      <p>“Cada escolha sua me aproximou mais do segredo. Mas a confirmação final? Só pode acontecer com um sorriso seu, ao vivo.”</p>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="script.js"></script>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>

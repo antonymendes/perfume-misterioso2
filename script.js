@@ -1,5 +1,3 @@
-// script.js - Lógica do funil com Firebase
-
 const firebaseConfig = {
   apiKey: "AIzaSyB3eTZTBPLSAxcGrqHMBnIHSf1YSGHwyPg",
   authDomain: "perfume-misterioso.firebaseapp.com",
